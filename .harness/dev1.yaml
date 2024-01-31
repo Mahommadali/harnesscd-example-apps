@@ -1,0 +1,20 @@
+pipeline:
+  name: dev1
+  identifier: dev1
+  projectIdentifier: default_project
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: dev
+        identifier: dev
+        description: ""
+        type: Pipeline
+        spec:
+          org: default
+          pipeline: Build_Mahommadali_DOCKER_1701238726412
+          project: default_project
+          inputSetReferences:
+            - Build_Mahommadali_DOCKER_1701238726412pushtriggerinputset
+        delegateSelectors:
+          - dev
